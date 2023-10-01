@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Task 1</title>
+  <style>
+    * {
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label for="num1">Enter a text:</label>
+    <input type="text" id="str">
+    <br>
+    <button onclick="alphabet()">Reverse</button>
+    <p id="result"></p>
+  </div>
+</body>
+
+</html>
+<script>
+  function alphabet() {
+    let str = document.getElementById("str").value;
+    var arr = str.split("");
+    res = arr.sort().join("");
+    document.getElementById("result").innerHTML = "String in alphabetical order: <br>" + res;
+  }
+</script>

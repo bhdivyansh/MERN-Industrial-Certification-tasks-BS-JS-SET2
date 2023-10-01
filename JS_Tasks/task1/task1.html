@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task 1</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="num1">Enter a Number:</label>
+        <input type="text" id="num">
+        <br>
+        <button onclick="reverseFunction()">Reverse</button>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>
+<script>
+    function reverseFunction() {
+        let num = document.getElementById("num").value;
+        let reversedStr = '';
+        for (let i = num.length - 1; i >= 0; i--) {
+            reversedStr += num[i];
+        }
+        document.getElementById("result").textContent = "The result is: " + reversedStr;
+    }
+</script>
